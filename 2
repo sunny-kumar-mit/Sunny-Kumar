@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    int phy, maths, chem;
+
+    printf("Enter your physics marks:\n");
+    scanf("%d",&phy);
+
+    printf("Enter your chemistry marks:\n");
+    scanf("%d",&chem);
+    printf("Enter your maths marks:\n");
+    scanf("%d",&maths);
+
+    if(phy<=33 || chem<=33 || maths<=33)
+    {
+        printf("Your are fail due to individual subjest\n");
+    }
+    else if((phy+chem+maths)/3<40)
+    {
+        printf("You are fail due to less percentage\n");
+    }
+    else
+    {
+        printf("You are passed!!\n Well Done!!\n");
+    }
+
+    return 0;
+}
